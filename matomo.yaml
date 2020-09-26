@@ -244,6 +244,8 @@ objects:
       name: matomo
       weight: 100
     wildcardPolicy: None
+    tls:
+      termination: edge
 - apiVersion: batch/v2alpha1
   kind: CronJob
   metadata:
