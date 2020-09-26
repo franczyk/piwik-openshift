@@ -30,7 +30,7 @@ oc -n openshift process mariadb-persistent -p MYSQL_DATABASE=matomo | oc -n $PRO
 ### 2 Deploy Matomo
 
 ```
-oc process -f https://raw.githubusercontent.com/tobru/piwik-openshift/master/matomo.yaml -p APP_URL=stats.example.com | oc -n $PROJECT create -f -
+oc process -f https://raw.githubusercontent.com/franczyk/piwik-openshift/master/matomo.yaml -p APP_URL=stats.example.com | oc -n $PROJECT create -f -
 ```
 
 ### 3 Configure Matomo
@@ -49,14 +49,14 @@ oc process -f https://raw.githubusercontent.com/tobru/piwik-openshift/master/mat
 Execute the following command to get the available parameters:
 
 ```
-oc process -f https://raw.githubusercontent.com/tobru/piwik-openshift/master/matomo.yaml --parameters
+oc process -f https://raw.githubusercontent.com/franczyk/piwik-openshift/master/matomo.yaml --parameters
 ```
 
 ## Contributions
 
 Very welcome!
 
-1. Fork it (https://github.com/tobru/piwik-openshift/fork)
+1. Fork it (https://github.com/franczyk/piwik-openshift/fork)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
